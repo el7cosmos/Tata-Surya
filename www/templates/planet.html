@@ -1,0 +1,15 @@
+<ion-view title="{{planet.name}}">
+  <ion-content class="has-header" has-bouncing="true" style="background-image:url({{planet.img}})">
+    <div class="list list-inset">
+      <ion-item class="item item-body">
+        <!-- <img class="full-image" ng-src="{{planet.img}}"> -->
+        <p>{{planet.description}}</p>
+      </ion-item>
+
+      <ion-item ng-repeat="item in items">
+        <h2>{{item.title}}</h2>
+        <p>{{item.description}}</p>
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
